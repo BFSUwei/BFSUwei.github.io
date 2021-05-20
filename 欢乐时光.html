@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>欢乐时光</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="background.css">
+<link rel="stylesheet"  href="topnav.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/*设置图片库*/
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+/* 设置页眉的样式 */
+.header {
+  padding: 20px;
+  text-align: center;
+  color: aliceblue;
+}
+/* 创建并排的三个非等列 */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  color: aliceblue;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 响应式布局 - 创建堆叠而非并排的三列 */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>思维决定命运</h1>
+  <p>一个录音框，一个分享栏<br>一直到...</p>
+</div>
+
+<div class="topnav">
+  <a  href="index.html">返回主页</a>
+  <a  href="前世今生.html">前世今生</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    
+    <h2>多样的俱乐部活动，会与陌生人有怎样的共鸣？</h2>
+    <div class="gallery">
+        <a target="_blank" href="images/读书.jpg">
+          <img src="images/读书.jpg" alt="读书" width="600" height="25%">
+        </a>
+        <div class="desc">不同的读者，总有不经意的灵魂碰撞</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/歌曲.jpg">
+          <img src="images/歌曲.jpg" alt="音乐" width="600" height="25%">
+        </a>
+        <div class="desc">我歌唱着，忘记了所有喧嚣</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/电影.jpg">
+          <img src="images/电影.jpg" alt="电影" width="600" height="25%">
+        </a>
+        <div class="desc">电影给时间涂上香料</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/闹钟.jpg">
+          <img src="images/闹钟.jpg" alt="闹钟" width="600" height="25%">
+        </a>
+        <div class="desc">其实我是一个演员</div>
+      </div>
+</div>
+  
+  <div class="column">
+    <h2>录制心情，寝室、社团、操场，总有一个适合你</h2>
+    <div class="gallery">
+        <a target="_blank" href="images/标签.jpg">
+          <img src="images/标签.jpg" alt="读书" width="600" height="25%">
+        </a>
+        <div class="desc">选择一个标签，录制一天的心情</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/寝室.jpg">
+          <img src="images/寝室.jpg" alt="音乐" width="600" height="25%">
+        </a>
+        <div class="desc">这个地方，只属于你和室友</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/社团.jpg">
+          <img src="images/社团.jpg" alt="电影" width="600" height="25%">
+        </a>
+        <div class="desc">社团活动，还不够精彩？</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/操场.jpg">
+          <img src="images/操场.jpg" alt="闹钟" width="600" height="25%">
+        </a>
+        <div class="desc">自由活动，在广场上呐喊</div>
+      </div> 
+</div>
+  
+  <div class="column">
+    <h2>更多精彩，等你探索...<br><br></h2>
+    <div class="gallery">
+        <a target="_blank" href="images/俱乐部.jpg">
+          <img src="images/俱乐部.jpg" alt="读书" width="600" height="25%">
+        </a>
+        <div class="desc">眼花缭乱的俱乐部，给你不同好心情</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/播客.jpg">
+          <img src="images/播客.jpg" alt="音乐" width="600" height="25%">
+        </a>
+        <div class="desc">好声音，好故事<br><br></div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="images/每日一阅.jpg">
+          <img src="images/每日一阅.jpg" alt="电影" width="600" height="25%">
+        </a>
+        <div class="desc">每日一阅，不同视角</div>
+      </div>
+
+      <div class="gallery">
+        <div class="desc">知道这里为什么要留白吗？<br>因为...</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="images/遐想.jpg">
+          <img src="images/遐想.jpg" alt="电影" width="600" height="25%">
+        </a>
+        <div class="desc">故事远未结束，我们一起探索...</div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
